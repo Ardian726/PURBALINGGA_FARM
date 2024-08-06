@@ -9,9 +9,7 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/dashboard', [DaftarController::class, 'dashboard'])->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -21,7 +19,6 @@ Route::middleware('auth')->group(function () {
 
 Route::controller(DaftarController::class)->group(function () {
     Route::get('/daftar', 'index');
-    Route::get('/dashboard', 'dashboard')->middleware('auth');
     Route::get('/daftar-create', 'create');
     Route::post('/daftar-create', 'store')->name('daftar.perform');
     Route::get('/daftar-edit/{id}', 'edit')->name('daftar.edit');
