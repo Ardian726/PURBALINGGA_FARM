@@ -1,7 +1,7 @@
 <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
     <!-- Col -->
     <div>
-        <h1 class="text-3xl text-center font-bold text-gray-800 sm:text-4xl lg:text-5xl lg:leading-tight">
+        <h1 class="text-3xl text-center font-bold text-gray-800 sm:text-4xl lg:text-5xl lg:leading-tight" id="ketentuan">
             بسم الله الرحمن الرحيم
         </h1>
         <p class="mt-5 text-center md:text-lg text-gray-800">
@@ -251,7 +251,8 @@
                                 <input type="radio" name="alamat_pengiriman"
                                     class="shrink-0 mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none"
                                     id="alamat_pengiriman">
-                                <span class="text-sm text-gray-500 ms-3">Akan Dikirim Ke (Sekitaran Banyumas Raya)</span>
+                                <span class="text-sm text-gray-500 ms-3">Akan Dikirim Ke (Sekitaran Banyumas
+                                    Raya)</span>
                             </label>
 
                             <label for="alamat_pengiriman"
@@ -281,12 +282,14 @@
                             class="shrink-0 mt-1.5 border-gray-200 rounded text-blue-600 focus:ring-blue-500">
                     </div>
                     <div class="ms-3">
-                        <label for="remember-me" class="text-sm text-gray-600">
+                        <label for="remember-me" class="text-sm text-gray-600 cursor-pointer">
                             Dengan mengirimkan formulir ini, saya
                             telah membaca dan menyetujui
-                            <span class="text-blue-600 font-medium">
-                                Ketentuan yang berlaku
-                            </span>
+                            <a href="#ketentuan">
+                                <span class="text-blue-600 font-medium hover:underline">
+                                    Ketentuan yang berlaku
+                                </span>
+                            </a>
                         </label>
                     </div>
                 </div>
