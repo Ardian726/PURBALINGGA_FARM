@@ -246,27 +246,29 @@
                         <label for="alamat-pengiriman" class="block mb-2 text-sm text-gray-700 font-medium">Hewan
                             Kurban akan dikirim/Titip Salur</label>
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
-                            <label for="alamat_pengiriman"
-                                class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500">
-                                <input type="radio" name="alamat_pengiriman"
-                                    class="shrink-0 mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none"
-                                    id="alamat_pengiriman">
-                                <span class="text-sm text-gray-500 ms-3">Akan Dikirim Ke (Sekitaran Banyumas
-                                    Raya)</span>
-                            </label>
-
-                            <label for="alamat_pengiriman"
-                                class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500">
-                                <input type="radio" name="alamat_pengiriman"
-                                    class="shrink-0 mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none"
-                                    id="hs-radio-checked-in-form" checked="">
-                                <span class="text-sm text-gray-500 ms-3">Titip Salur via Purbalingga Farm ke Daerah
-                                    Minim Kurban</span>
-                            </label>
-
-                            <input type="text" name="alamat_pengiriman" autocomplete="off"
-                                class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none"
-                                id="input-alamat-pengiriman">
+                            <div>
+                                <label for="alamat_pengiriman"
+                                    class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500">
+                                    <input type="radio" name="alamat_pengiriman"
+                                        class="shrink-0 mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none"
+                                        id="alamat_pengiriman">
+                                    <span class="text-sm text-gray-500 ms-3">Akan Dikirim Ke (Sekitaran Banyumas
+                                        Raya)</span>
+                                </label>
+                                <input type="text" name="alamat_pengiriman" autocomplete="off"
+                                    class="py-3 px-4 mt-3 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none"
+                                    id="input-alamat-pengiriman">
+                            </div>
+                            <div>
+                                <label for="alamat_pengiriman2"
+                                    class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500">
+                                    <input type="radio" name="alamat_pengiriman"
+                                        class="shrink-0 mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none"
+                                        id="alamat_pengiriman2" checked="">
+                                    <span class="text-sm text-gray-500 ms-3">Titip Salur via Purbalingga Farm ke Daerah
+                                        Minim Kurban</span>
+                                </label>
+                            </div>
                         </div>
                         @error('alamat_pengiriman')
                             <p class="text-sm text-red-600 mt-2" id="hs-validation-name-error-helper">
@@ -286,7 +288,7 @@
                             Dengan mengirimkan formulir ini, saya
                             telah membaca dan menyetujui
                             <a href="#ketentuan">
-                                <span class="text-blue-600 font-medium hover:underline">
+                                <span class="text-blue-600 font-medium hover:underline underline lg:no-underline">
                                     Ketentuan yang berlaku
                                 </span>
                             </a>
